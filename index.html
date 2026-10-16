@@ -159,10 +159,11 @@
     @media (max-width: 900px) { .layout { grid-template-columns: 1fr; gap: 24px; } }
 
     /* Présentation */
-    .intro { display: grid; grid-template-columns: 132px 1fr; gap: 28px; align-items: start; padding-bottom: 36px; border-bottom: 1px solid var(--rule); }
+    .intro { display: grid; grid-template-columns: 200px 1fr; gap: 28px; align-items: stretch; padding-bottom: 36px; border-bottom: 1px solid var(--rule); }
     @media (max-width: 560px) { .intro { grid-template-columns: 1fr; } }
-    .portrait { margin: 0; width: 132px; aspect-ratio: 3 / 4; background: var(--wash); border: 1px solid var(--rule); overflow: hidden; }
-    .portrait img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .portrait { margin: 6px 0 0; width: 200px; height: calc(100% - 12px); min-height: 240px; background: var(--wash); border: 1px solid var(--rule); overflow: hidden; }
+    .portrait img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 22%; display: block; }
+    @media (max-width: 560px) { .portrait { width: 160px; height: 213px; min-height: 0; margin: 0; } }
     .intro p { font: 400 18.5px/1.65 var(--sans); margin: 0 0 1em; max-width: 66ch; }
     .intro p:last-child { margin-bottom: 0; }
 
@@ -277,6 +278,7 @@
             <div class="art-meta">
               <span class="badge-open">Accès libre</span>
               <span class="art-type">Guide pratique</span>
+              <span>PDF · 17 p.</span>
               <span>Publié le <time datetime="2026-09-25">25 septembre 2026</time></span>
             </div>
             <h3 class="art-title"><a href="guide-monetisation-donnees/">Monétisation des données d'entreprise</a></h3>
@@ -284,7 +286,7 @@
             <p class="art-abs">Faire d'un fichier clients un revenu récurrent dans le respect du cadre juridique de 2026 : modèles de vente et de location, critères de valeur d'un fichier, étapes techniques et 6 cas d'usage.</p>
             <p class="art-links">
               <span class="tag">Data marketing</span>
-              <a href="pdf/guide-monetisation-donnees.pdf" type="application/pdf">PDF · 17 p.</a>
+              <a href="guide-monetisation-donnees/">Accéder à l'article</a>
               <a class="btn-dl" href="pdf/guide-monetisation-donnees.pdf" download>Télécharger</a>
             </p>
           </li>
