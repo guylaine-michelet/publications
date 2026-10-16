@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Monétisation des données d'entreprise : guide pratique 2026 | Guylaine Michelet</title>
-  <meta name="description" content="Guide pratique de Guylaine Michelet : vendre ou louer ses données clients en conformité avec le cadre 2026 (RGPD, CNIL, démarchage téléphonique). Modèles, critères de valeur, étapes techniques et 6 cas d'usage.">
+  <meta name="description" content="Guide pratique par Guylaine Michelet : vendre ou louer ses données clients en conformité avec le cadre 2026 (RGPD, CNIL, démarchage téléphonique). Modèles, critères de valeur, étapes techniques et 6 cas d'usage.">
   <meta name="author" content="Guylaine Michelet">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <link rel="canonical" href="https://guylaine-michelet.github.io/publications/guide-monetisation-donnees/">
@@ -186,10 +186,11 @@
     @media (max-width: 900px) { .layout { grid-template-columns: 1fr; gap: 24px; } }
 
     /* Présentation */
-    .intro { display: grid; grid-template-columns: 132px 1fr; gap: 28px; align-items: start; padding-bottom: 36px; border-bottom: 1px solid var(--rule); }
+    .intro { display: grid; grid-template-columns: 200px 1fr; gap: 28px; align-items: stretch; padding-bottom: 36px; border-bottom: 1px solid var(--rule); }
     @media (max-width: 560px) { .intro { grid-template-columns: 1fr; } }
-    .portrait { margin: 0; width: 132px; aspect-ratio: 3 / 4; background: var(--wash); border: 1px solid var(--rule); overflow: hidden; }
-    .portrait img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .portrait { margin: 6px 0 0; width: 200px; height: calc(100% - 12px); min-height: 240px; background: var(--wash); border: 1px solid var(--rule); overflow: hidden; }
+    .portrait img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%; display: block; }
+    @media (max-width: 560px) { .portrait { width: 160px; height: 213px; min-height: 0; margin: 0; } }
     .intro p { font: 400 18.5px/1.65 var(--sans); margin: 0 0 1em; max-width: 66ch; }
     .intro p:last-child { margin-bottom: 0; }
 
@@ -861,6 +862,7 @@
         <div>
           <h2>Publications</h2>
           <ul>
+            <li><a href="../livre-blanc-qualite-donnees-2027/">Data Quality à horizon 2027</a></li>
             <li><a href="./">Monétisation des données d'entreprise</a></li>
           </ul>
         </div>
