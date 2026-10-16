@@ -218,6 +218,11 @@
     .box dt { font-weight: 600; color: var(--ink); margin-top: 10px; }
     .box dt:first-child { margin-top: 0; }
     .box dd { margin: 2px 0 0; color: var(--ink-2); line-height: 1.5; }
+    .box .picks li { padding: 9px 0; }
+    .box .picks a { display: block; font: 500 15px/1.35 var(--display); color: var(--accent); text-decoration: none; }
+    .box .picks a:hover { color: var(--brand); text-decoration: underline; }
+    .box .picks span { display: block; margin-top: 3px; font-size: 13px; color: var(--ink-3); }
+    .box .cite-note { margin: 0 0 8px; font-size: 14.5px; line-height: 1.5; color: var(--ink-2); }
     .box .cite { font: 400 14.5px/1.55 var(--sans); color: var(--ink-2); margin: 0; }
 
     /* Pied de page */
@@ -337,8 +342,11 @@
       </div>
 
       <div class="box">
-        <h2>Citer ces travaux</h2>
-        <p class="cite">Michelet, G. (2026). <em>Data Quality à horizon 2027 : pourquoi les données dégradées coûtent cher aux entreprises et comment mettre en œuvre un DQM rentable</em>. Livre blanc, IDAIA Group. https://guylaine-michelet.github.io/publications/livre-blanc-qualite-donnees-2027/</p>
+        <h2>Publications de référence</h2>
+        <ul class="picks">
+          <li><a href="livre-blanc-qualite-donnees-2027/">Data Quality à horizon 2027</a><span>Livre blanc · 2026</span></li>
+          <li><a href="guide-monetisation-donnees/">Monétisation des données d'entreprise</a><span>Guide pratique · 2026</span></li>
+        </ul>
       </div>
     </aside>
   </div>
