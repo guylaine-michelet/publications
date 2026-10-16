@@ -235,6 +235,15 @@
     footer a:hover { color: #fff; text-decoration: underline; }
     .foot-bottom { border-top: 1px solid rgba(255,255,255,.15); margin-top: 32px; padding-top: 18px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; font-size: 13px; color: rgba(255,255,255,.6); }
   </style>
+  <script async src="https://cloud.umami.is/script.js" data-website-id="a1d6d145-b11a-4dbc-81c9-554c6ef65166" data-domains="guylaine-michelet.github.io"></script>
+  <script>
+    document.addEventListener("click", function (e) {
+      var a = e.target.closest && e.target.closest('a[href$=".pdf"]');
+      if (!a || !window.umami) return;
+      var pub = a.getAttribute("href").split("/").pop().replace(".pdf", "");
+      window.umami.track(a.hasAttribute("download") ? "telechargement-pdf" : "ouverture-pdf", { publication: pub, page: location.pathname });
+    });
+  </script>
 </head>
 <body>
 
