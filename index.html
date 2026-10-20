@@ -239,6 +239,13 @@
     footer a { color: rgba(255,255,255,.85); text-decoration: none; }
     footer a:hover { color: #fff; text-decoration: underline; }
     .foot-bottom { border-top: 1px solid rgba(255,255,255,.15); margin-top: 32px; padding-top: 18px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; font-size: 13px; color: rgba(255,255,255,.6); }
+    /* Esperluette du sur-titre : Josefin Sans 600 (SIL OFL 1.1), sous-ensemble limité au caractère « & » */
+    @font-face {
+      font-family: "Josefin Amp";
+      src: url(data:font/woff2;base64,d09GMgABAAAAAAMMAA4AAAAABiAAAAK0AAIAQgAAAAAAAAAAAAAAAAAAAAAAAAAAGyAcKgZgP1NUQVREADQRCAqBLIE3ATYCJAMICwYABCAFhTAHIBsyBSieg3FDX2IIhsipm5gilM+X4X6ESk4QrZXVvfOAIULF6JBkWL2+eBIaSLNjthEuNvv/j3vvJ9LA9yENQvz0+0NclRL70hYa00LZ6YDSYKKsOP+HzqWbzRokEgc6pSobURTlRwO94OFbpb+/4AAflF+3iUT6ePiEyBCRiKo2w68KtBuuCmHVmq4hoCtQBwTaTSRHhMC4Zw7iFJSg96BkSY6hkI2FAhtBYh+jC4aGiOh4oHBoImk+1yg/YxUQEJfzMUYjCaFVoj8ixiNeOB7BBJw8600QBiIoeiNAdBDHgErIKAYIkKjQH0mQnGw0UPKBiXVW1L8E+BGc7wUSlKLqcmAToD1QjRhG5s3a5xG6eudBzHz71nHly4xde2/bGw/1bN8YsGv2+cNbeo5ehLFXT4bt3v88o69f+e98W9TBGttz0K6eJYD+Zws3J45QKjr7DO46n/HCselpbfjkXdT74j+bw8rg3jJx87N0vMW00V67kmkebkraa321emVfm2tc9PoSn9QPGgEgkFaMs5059/OW/6NXpFv49HfwNgD+zL78+7yuuqm+oFmC4CVeHwT5/xbB6hlqkL/M7wHbh2I1Mmy57zo0oBKFAWIscPgwP4R86o4RvrImjiwWkG8yNPa4ZrPjtEAAnfFJPAt6J/BF2MkfcjFmVmiUljEtJyosAkOM9Az0kCERQUiHtLygkKgUZJBXSh7SJyctJsgPQ+oVYBFpOXmIXASGZeQ56eiERfV5gY+WX1qSzpCI0l55Hbv5xUWl6DZwuN4iLQXTJM9jQTkKashkTxYZEJSPqxOCAlAaR3rC5ImbCUUbm2nFupETaAonsw3SEgLtz8IKErxyjLT0l/VdCtarRzMXOewUq2vgkas5eVFpKYjMtg4adX4+GjjfDvNKiPIb+MuPUkhAzVwGAAAA) format("woff2");
+      font-weight: 600; font-style: normal; font-display: swap; unicode-range: U+0026;
+    }
+    .banner .kicker .amp { font-family: "Josefin Amp", var(--display); font-weight: 600; font-size: 1.05em; letter-spacing: 0; vertical-align: baseline; margin-right: .16em; }
   </style>
   <link rel="icon" href="/publications/favicon.ico" sizes="48x48">
   <link rel="icon" href="/publications/img/icons/icon-192.png" type="image/png" sizes="192x192">
@@ -267,7 +274,7 @@
 
   <header class="banner">
     <div class="wrap">
-      <p class="kicker">Recherches et publications</p>
+      <p class="kicker">Recherches <span class="amp">&amp;</span> publications</p>
       <h1>Guylaine Michelet</h1>
       <p class="affil">Travaux en performance digitale, data marketing et qualité des données.</p>
     </div>
